@@ -186,12 +186,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Animation Classes */
 .carousel-item.active .carousel-caption {
-    animation-duration: 3s;
+    animation-duration: 5s;
 }
 
 /* Slide transition animation */
 .carousel-item {
-    transition: transform 5s ease-in-out;
+    transition: transform 2s ease-in-out;
 }
 
 /* Hero Section */
