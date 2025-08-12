@@ -144,6 +144,21 @@ document.addEventListener('DOMContentLoaded', function () {
         }, false);
     });
 
+    // Form validation
+    (function() {
+        'use strict';
+        const form = document.getElementById('contactForm');
+        
+        form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            
+            form.classList.add('was-validated');
+        }, false);
+    })();
+
     // Animate elements on scroll
     const animatedElements = document.querySelectorAll('.project-item, .card, .skill-item');
 
