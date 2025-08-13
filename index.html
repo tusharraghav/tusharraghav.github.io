@@ -383,32 +383,35 @@
                 <div class="divider mx-auto bg-primary mb-4"></div>
                 <p class="text-muted mx-auto experience-description" style="max-width: 700px;">A journey shaped by curiosity, adaptability, and hands-on problem-solving. I’ve consistently grown by applying modern technologies to real-world challenges, while staying committed to continuous learning and meaningful impact. </p>
             </div>
-            <div class="timeline">
+
+            <!--- Responsive Time-line with left/right alternating -->
+            <div class="timeline position-relative">
                 <!-- Timeline connector -->
-                <div class="timeline-line"></div>
+                <div class="timeline-line position-absolute start-50 translate-middle-x d-none d-md-block"></div>
 
                 <!-- Experience Item 1 - Right-->
-                <div class="timeline-item timeline-item-right">
-                    <div class="timeline-card card border-0 shadow-sm hover-lift">
-                        <div class="card-body p-4 p-lg-5">
-                            <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                                <h4 class="mb-2 mb-md-0 fw-bold">SDE-Intern</h4>
-                                <span class="badge bg-primary bg-opacity-10 text-primary py-2 px-3 fw-medium"><i class="far fa-calendar-alt me-2"></i>Feb 2025 - Apr 2025</span>
+                <div class="timeline-item timeline-item-right d-flex flex-column flex-md-row justify-content-md-end align-items-center mb-4">
+                        <div class="timeline-card card border-0 shadow-sm hover-lift flex-grow-1 ms-md-0 me-md-4 ms-0 mt-3 mt-md-0 order-md-1">
+                            <div class="card-body p-4 p-lg-5">
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                                    <h4 class="mb-2 mb-md-0 fw-bold">SDE-Intern</h4>
+                                    <span class="badge bg-primary bg-opacity-10 text-primary py-2 px-3 fw-medium"><i class="far fa-calendar-alt me-2"></i>Feb 2025 - Apr 2025</span>
+                                </div>
+                                <h5 class="text-primary mb-3"><i class="fas fa-building me-2"></i>Escale Solutions Pvt. Ltd., Noida</h5>
+                                <ul class="timeline-list mb-0 ps-3">
+                                    <li class="mb-2">Developed secure, responsive web applications improving UX for diverse client projects.</li>
+                                    <li class="mb-2">Designed and optimized UI components to enhance accessibility and mobile responsiveness.</li>
+                                    <li>Collaborated with cross-functional teams to debug, optimize, and streamline data flow for better performance.</li>
+                                </ul>
                             </div>
-                            <h5 class="text-primary mb-3"><i class="fas fa-building me-2"></i>Escale Solutions Pvt. Ltd., Noida</h5>
-                            <ul class="timeline-list mb-0 ps-3">
-                                <li class="mb-2">Worked on building secure, responsive web applications and contributed to enhancing user experience through design insights. </li>
-                                <li class="mb-2">Contributed to a fast-paced product development environment by building secure, user-centric web applications. </li>
-                                <li>Collaborated closely with the team to troubleshoot, optimize, and ensure smooth data handling, aligning solutions with real-world user needs. </li>
-                            </ul>
                         </div>
-                    </div>
-                    <div class="timeline-dot bg-primary"></div>
+                        <div class="timeline-dot bg-primary rounded-circle position-relative z-2 order-md-2"></div>
                 </div>
 
-                <!----Experience 2-->
-                <div class="timeline-item timeline-item-left">
-                    <div class="timeline-card card border-0 shadow-sm hover-lift">
+                <!---Experience Item 2 - Left-->
+                <div class="timeline-item timeline-item-left d-flex flex-column flex-md-row justify-content-md-start align-items-center mb-4">
+                    <div class="timeline-dot bg-primary rounded-circle position-relative z-2"></div>
+                    <div class="timeline-card card border-0 shadow-sm hover-lift flex-grow-1 ms-md-4 ms-0 mt-3 mt-md-0">
                         <div class="card-body p-4 p-lg-5">
                             <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                                 <h4 class="mb-2 mb-md-0 fw-bold">ESD-Intern</h4>
@@ -416,15 +419,15 @@
                             </div>
                             <h5 class="text-primary mb-3"><i class="fas fa-building me-2"></i>BIOSTAG Technologies, Delhi</h5>
                             <ul class="timeline-list mb-0 ps-3">
-                                <li class="mb-2">Contributed to real-time embedded solutions by integrating hardware components and developing user-focused system interfaces. </li>
-                                <li>Resolved on-site technical issues and ensured smooth device interaction, while maintaining clear communication through progress reports and stakeholder updates. </li>
+                                <li class="mb-2">Built embedded solutions by integrating sensors, microcontrollers, and display units.</li>
+                                <li class="mb-2">Resolved on-site hardware and software issues, ensuring minimum downtime.</li>
+                                <li>Delivered detailed progress reports, keeping stakeholders informed during project cycles.</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="timeline-dot bg-primary"></div>
                 </div>
 
-                <!---- Add more timeline items here following the alternating pattern -->
+                <!--Experience Item 3 - Right-->
             </div>
         </div>
     </section>

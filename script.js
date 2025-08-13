@@ -132,6 +132,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    document.addEventListener("scroll", () => {
+        document.querySelectorAll(".timeline-card").forEach(card => {
+            const cardTop = card.getBoundingClientRect().top;
+            if (cardTop < window.innerHeight - 50) {
+                card.classList.add("show");
+            }
+        });
+    });
+
     // Bootstrap form validation
     const forms = document.querySelectorAll('.needs-validation');
     Array.from(forms).forEach(form => {
